@@ -14,14 +14,14 @@ public class Main{
     logger.trace( "Entering application." );
     JmsProvider provider = createProvider();
     UtilJMS clientJms = new UtilJMS( provider );
-    System.out.println( clientJms.toString() );
+    logger.debug( clientJms.toString() );
     try{
       clientJms.enviarMensajeJMSPuntoAPunto( getTextMEssage(), "TEXT_MESSAGE" );
     }
     catch( JMSException e ){
       logger.error( e );
     }
-    System.out.println( "se ha terminado de enviar el mensaje" );
+    logger.debug( "se ha terminado de enviar el mensaje" );
   }
   
   private static JmsProvider createProvider(){
@@ -42,8 +42,8 @@ public class Main{
         + "  <linea>987969796</linea>\r" + "  <motivoReposicion>Da&amp;#241;o</motivoReposicion>\r"
         + "  <numeroDocumento>09309768</numeroDocumento>\r" + "  <tipoDocumento>01</tipoDocumento>\r"
         + "</CallbackCambioSimCBIOMDB>]]></xmlDatos>\r" + "</DataTransaccionCBIO>\r";
-    System.out.println( message );
-    System.out.println( message.replaceAll( "\n|\r", "" ) );
+    logger.debug( message );
+    logger.debug( message.replaceAll( "\n|\r", "" ) );
     return message.replaceAll( "\n|\r", "" );
   }
 }
