@@ -1,0 +1,15 @@
+{ 
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/wljmsclient.jar",
+            "lib/wlthint3client.jar"
+        ]
+    }
+}

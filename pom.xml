@@ -1,6 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.pe.demneru.client</groupId>
     <artifactId>client-jms</artifactId>
@@ -8,12 +6,10 @@
     <name>client-jms</name>
     <description>simple client jms</description>
     <properties>
-        <spring.version>3.1.0.RELEASE</spring.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
     <dependencies>
-
 
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
@@ -21,18 +17,28 @@
             <version>2.13.2</version>
         </dependency>
 
-
+        
         <dependency>
             <groupId>com.oracle.weblogic</groupId>
             <artifactId>wljmsclient</artifactId>
             <version>1.0.0</version>
         </dependency>
+        
         <dependency>
             <groupId>com.oracle.weblogic</groupId>
             <artifactId>wlthint3client</artifactId>
             <version>1.0.0</version>
         </dependency>
+
+
     </dependencies>
+    <repositories>
+        <repository>
+            <id>local-maven-repo</id>
+            <url>file:///${project.basedir}/lib</url>
+        </repository>
+    </repositories>
+    
     <build>
         <plugins>
             <plugin>
