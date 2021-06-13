@@ -33,15 +33,7 @@ public class Main{
   }
   
   private static String getTextMEssage(){
-    String message = "<DataTransaccionCBIO><idTransaccion>202098112525</idTransaccion><nombreAplicacion>SICAR</nombreAplicacion><usuarioAplicacion>C18655</usuarioAplicacion>\r"
-        + "  <tipoOperacion>C19</tipoOperacion>\r" + "  <idNegocio>21633488</idNegocio>\r"
-        + "  <idNegocioAux>987969796</idNegocioAux>\r" + "  <xmlDatos><![CDATA[<CallbackCambioSimCBIOMDB>\r"
-        + "  <coIdPub>MIG000006401567</coIdPub>\r" + "  <codigoBloqueo/>\r" + "  <csIdPub>7648799</csIdPub>\r"
-        + "  <iccidActual>8951100320141820073</iccidActual>\r" + "  <iccidNuevo>8951101639454956433</iccidNuevo>\r"
-        + "  <imsiActual>716100314182007</imsiActual>\r" + "  <imsiNuevo>716101645495643</imsiNuevo>\r"
-        + "  <linea>987969796</linea>\r" + "  <motivoReposicion>Da&amp;#241;o</motivoReposicion>\r"
-        + "  <numeroDocumento>09309768</numeroDocumento>\r" + "  <tipoDocumento>01</tipoDocumento>\r"
-        + "</CallbackCambioSimCBIOMDB>]]></xmlDatos>\r" + "</DataTransaccionCBIO>\r";
+    String message = "messageToSend";
     logger.debug( message );
     logger.debug( message.replaceAll( "\n|\r", "" ) );
     return message.replaceAll( "\n|\r", "" );

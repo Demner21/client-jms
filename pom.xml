@@ -17,13 +17,13 @@
             <version>2.13.2</version>
         </dependency>
 
-        
+
         <dependency>
             <groupId>com.oracle.weblogic</groupId>
             <artifactId>wljmsclient</artifactId>
             <version>1.0.0</version>
         </dependency>
-        
+
         <dependency>
             <groupId>com.oracle.weblogic</groupId>
             <artifactId>wlthint3client</artifactId>
@@ -38,7 +38,7 @@
             <url>file:///${project.basedir}/lib</url>
         </repository>
     </repositories>
-    
+
     <build>
         <plugins>
             <plugin>
